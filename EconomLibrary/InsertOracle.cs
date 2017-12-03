@@ -17,9 +17,9 @@ namespace EconomLibrary
 
         private static string InsertALLSPBLO_Plan = "p_insert";
 
-        public static string InsertALLSPBLO_VOZ { get => InsertALLSPBLO_Voz;  }
-        public static string InsertALLSPBLO_OTK { get => InsertALLSPBLO_Otk; }
-        public static string InsertALLSPBLO_DOH { get => InsertALLSPBLO_Doh;  }
-        public static string InsertALLSPBLO_PLAN { get => InsertALLSPBLO_Plan;  }
+        public static string InsertALLSPBLO_VOZ_GET { get => InsertALLSPBLO_Voz;  }
+        public static string InsertALLSPBLO_OTK_GET { get => InsertALLSPBLO_Otk; }
+        public static string InsertALLSPBLO_DOH_GET { get => InsertALLSPBLO_Doh;  }
+        public static string InsertALLSPBLO_PLAN_GET { get => InsertALLSPBLO_Plan;  }
     }
 }

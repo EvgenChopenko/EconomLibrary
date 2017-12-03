@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace EconomLibrary
 {
-    class BD
+    public static class BD
     {
-        private string nameBD = "";
-        private string ConnectionString = "";
+        private static string nameBD = "";
+        private static string ConnectionString = "";
 
-        public string NameBD { get => nameBD; set => nameBD = value; }
-        public string ConnectionString1 { get => ConnectionString; set => ConnectionString = value; }
-
+        public static string NameBD { get => nameBD; set => nameBD = value; }
+        public static string ConnectionStrings { get => ConnectionString; set => ConnectionString = value; }
+        
     }
 }

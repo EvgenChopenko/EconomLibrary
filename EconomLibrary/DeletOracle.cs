@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EconomLibrary
 {
-   static class DeletOracle
+   public static class DeletOracle
     {
 
       
@@ -19,9 +19,9 @@ namespace EconomLibrary
       
         private static string DeletALLSPBLO_Plan = "p_deletDOCECO";
 
-        public static string DeletALLSPBLO_VOZ { get => DeletALLSPBLO_Voz;  }
-        public static string DeletALLSPBLO_OTK { get => DeletALLSPBLO_Otk; }
-        public static string DeletALLSPBLO_DOH { get => DeletALLSPBLO_Doh;  }
-        public static string DeletALLSPBLO_PLAN { get => DeletALLSPBLO_Plan; }
+        public static string DeletALLSPBLO_VOZ_GET { get => DeletALLSPBLO_Voz;  }
+        public static string DeletALLSPBLO_OTK_GET { get => DeletALLSPBLO_Otk; }
+        public static string DeletALLSPBLO_DOH_GET { get => DeletALLSPBLO_Doh;  }
+        public static string DeletALLSPBLO_PLAN_GET { get => DeletALLSPBLO_Plan; }
     }
 }

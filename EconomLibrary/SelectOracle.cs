@@ -369,7 +369,7 @@ where
         where dd.DATATEXT =:MONTHS
         and dd.YEAR = :YEAR";
 
-        private static string SelectALL_Scan = @"select doceco.specid , doceco.keyid , doceco.DATASTART,doceco.DATAFINISH
+        private static string Select_Scan = @"select doceco.specid , doceco.keyid , doceco.DATASTART,doceco.DATAFINISH
                                     from docplan_eco doceco 
                                     where doceco.DATATEXT = :Moths 
                                     and doceco.YEAR = :year";
@@ -541,5 +541,36 @@ b.dat between :DATES and :DATEF and
  i.AGRID in (select g.keyid from agr g where g.finance = 5 and g.STATUS =1)
 group by get_specdocid(v.num)";
 
+        public static string SelectBILLS_GET { get => SelectBills;  }
+        public static string SelectLO_US_GET { get => SelectLO_US;  }
+        public static string SelectLO_DC_GET { get => SelectLO_DC;  }
+        public static string SelectLO_STOMA_GET { get => SelectLO_STOMA; }
+        public static string SelctLO_USTotal_GET { get => SelctLO_USTotal;  }
+        public static string SelectLO_STOMA_TOTAL_GET { get => SelectLO_STOMA_Total;  }
+        public static string SelectLO_DC_TOTAL_GET { get => SelectLO_DC_Total;  }
+        public static string SelectLO_US_REFandVOZ_GET { get => SelectLO_US_RerAndVoz;  }
+        public static string SelectLO_STOMA_REFandVOZ_GET { get => SelectLO_STOMA_RefAndVoz;  }
+        public static string SelectLO_DC_REFandVOZ_GET { get => SelectLO_DC_RefAndVoz;  }
+        public static string SelectLO_FINPLAN_GET { get => SelectLO_FinPlan;  }
+        public static string SelectALL_PLAN_GET { get => SelectALL_Plan;  }
+        public static string Select_SCAN_GET { get => Select_Scan;  }
+        public static string SelectLO_DOH_GET { get => SelectLO_DOH;  }
+        public static string SelectSPB_DOH_GET { get => SelectSPB_DOH;  }
+        public static string SelectALL_DOH_GET { get => SelectALL_DOH;  }
+        public static string SelectLO_Doh_From_BILLS_GET { get => SelectLO_Doh_From_Bills; }
+        public static string SelectSPB_Doh_From_BILLS_GET { get => SelectSPB_Doh_From_Bills;  }
+        public static string SelectALL_Doh_From_BILLS_GET { get => SelectALL_Doh_From_Bills;  }
+        public static string SelectLO_Otk_From_BILLS_GET { get => SelectLO_Otk_From_Bills; }
+        public static string SelectSPB_Otk_From_BILLS_GET { get => SelectSPB_Otk_From_Bills;  }
+        public static string SelectALL_Otk_From_BILLS_GET { get => SelectALL_Otk_From_Bills;  }
+        public static string SelectLO_OTK_GET { get => SelectLO_Otk;  }
+        public static string SelectSPB_OTK_GET { get => SelectSPB_Otk;  }
+        public static string SelectALL_OTK_GET { get => SelectALL_Otk;  }
+        public static string SelectLO_VOZ_GET { get => SelectLO_Voz;  }
+        public static string SelectSPB_VOZ_GET { get => SelectSPB_Voz;  }
+        public static string SelectALL_VOZ_GET { get => SelectALL_Voz; }
+        public static string SelectLO_Voz_From_BILLS_GET { get => SelectLO_Voz_From_Bills;  }
+        public static string SelectSPB_Voz_From_BILLS_GET { get => SelectSPB_Voz_From_Bills;  }
+        public static string SelectALL_Voz_From_BILLS_GET { get => SelectALL_Voz_From_Bills; }
     }
 }
