@@ -14,5 +14,11 @@ namespace EconomLibrary
             EconomLibrary.SelectScan SC = new SelectScan();
             return SC.OracleSelectCommand();
         }
+
+        public static OracleCommand Select_Bills()
+        {
+            EconomLibrary.SelectBills SC = new SelectBills();
+            return SC.OracleSelectCommand();
+        }
     }
 }

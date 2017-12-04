@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.OracleClient;
 using EconomLibrary;
+using System.Data;
 
 namespace EconomLibrary
 {
@@ -15,24 +16,32 @@ namespace EconomLibrary
                                     where doceco.DATATEXT = :Moths 
                                     and doceco.YEAR = :year";*/
 
-   class SelectScan
+     class SelectScan
     {
        private OracleCommand selectscan =null;
         public SelectScan()
         {
-            selectscan = new OracleCommand(EconomLibrary.SelectOracle.Select_SCAN_GET);
+            selectscan = new OracleCommand(SelectOracle.Select_SCAN_GET,BD.Connection_GET);
 
             EconomLibrary.Parametrs ScanParametr = new Parametrs();
             ScanParametr.AddParametr(":Moths", OracleType.NChar, 255);
             ScanParametr.AddParametr(":year", OracleType.Number, 5);
-            selectscan.Parameters.AddRange(ScanParametr.OracleParameters());
+            selectscan.Parameters.AddRange(ScanParametr.OracleParameters());         
 
 
         }
 
-       public  OracleCommand OracleSelectCommand()
+        
+
+        public  OracleCommand OracleSelectCommand()
         {
             return selectscan;
         }
+
+        
     }
+
+
+
+
 }

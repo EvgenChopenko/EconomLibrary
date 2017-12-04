@@ -42,13 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD.cs" />
+    <Compile Include="comands.cs" />
     <Compile Include="DeletOracle.cs" />
+    <Compile Include="Dohod.cs" />
     <Compile Include="InsertOracle.cs" />
     <Compile Include="Parametrs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Select.cs" />
+    <Compile Include="SelectBills.cs" />
     <Compile Include="SelectOracle.cs" />
     <Compile Include="SelectScan.cs" />
+    <Compile Include="Select_LO_DC.cs" />
+    <Compile Include="Select_LO_STOMA.cs" />
+    <Compile Include="Select_LO_US.cs" />
     <Compile Include="UpdateOracle.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.OracleClient;
+using System.Collections;
+
 
 namespace EconomLibrary
 {
@@ -20,7 +22,7 @@ namespace EconomLibrary
             }
             else
             {
-               
+                throw new System.Exception("Ошибка добовления параметров");
             }
                
             
@@ -31,9 +33,9 @@ namespace EconomLibrary
             {
                 ORAParametrs.Add(new OracleParameter(name, oracleType, size, srcColum));
             }
-            else
+             else
             {
-
+                throw new System.Exception("Ошибка добовления параметров");
             }
 
 
@@ -46,7 +48,7 @@ namespace EconomLibrary
             }
             else
             {
-
+                throw new System.Exception("Ошибка добовления параметров");
             }
 
 
